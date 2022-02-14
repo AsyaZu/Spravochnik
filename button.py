@@ -1,4 +1,4 @@
 import controller as c
 
-c.launсh()
+c.launсh('spravochnik.txt')
 
