@@ -1,14 +1,13 @@
 
-def file_reading():
-    with open('spravochnik.txt') as file:
-        a = file.readline()
+def import_file():
+    with open('spravochnik.txt', encoding='UTF8') as file:
+        a = file.read()
         return a
 
-def save():
-    file1 = file_reading()
-    with open('new_spravochnik.txt', 'w') as file:
+def save_txt():
+    file1 = import_file()
+    with open('new_spravochnik.txt', 'w', encoding='UTF8') as file:
         file.write(file1)
-save()
 
 def inp():
     print('Операции со справочником: \n1 - вывести в консоль\n2 - сохранить в файл txt')
@@ -17,4 +16,3 @@ def inp():
 
 def output(file):
     print(file)
-
