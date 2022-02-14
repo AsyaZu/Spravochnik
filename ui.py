@@ -4,7 +4,7 @@ def import_file():
         a = file.read()
         return a
 
-def save_txt():
+def save_txt(file):
     file1 = import_file()
     with open('new_spravochnik.txt', 'w', encoding='UTF8') as file:
         file.write(file1)
