@@ -1,6 +1,4 @@
-
-
-
+import ui
 
 def launсh():
     file = ui.import_file() # импорт файла
