@@ -1,4 +1,4 @@
-import controller as c
+import controller as contr
 
-c.launсh()
+contr.launсh()
 
